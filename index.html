@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
 	<title>React v1</title>
+
+	<style>
+	.counter .count{
+		font-size: 80px;
+	}
+		.changeCount a{
+			color: red;
+			text-decoration: none;
+			margin: 20px;
+		}
+	</style>
 </head>
 <body>
-	<div id="app"></div>
-
+	<div class="" style="max-width: 1200px; margin: 0 auto;">
+		<div id="app"></div>
+		<h1>COMPONENTES SUARIOS</h1>
+		<div id="componentes"></div>
+		<h1 style="clear: both;">ESTADOS Y EVENTOS</h1>
+		<div id="estEventos"></div>
+	</div>
 
 	<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
 	<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-	<script src="app.js"></script>
+    <script src='bundle.js'></script><!-- Con webpack se esta compilando-->
 </body>
 </html>
